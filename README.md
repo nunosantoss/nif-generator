@@ -1,40 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gerador de NIFs
 
-## Getting Started
+Este é um projeto para gerar números de identificação fiscal (NIFs) válidos para diferentes tipos de contribuintes em Portugal. O projeto oferece uma interface simples e permite ao utilizador selecionar o tipo de NIF desejado, gerando um número válido de acordo com as regras fiscais portuguesas.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Geração de NIFs** para diversos tipos de contribuintes, incluindo:
+  - Indivíduos singulares (prefixos 1, 2, 3)
+  - NIFs de não residentes (prefixo 45)
+  - Coletivas (prefixo 5)
+  - Coletivas públicas (prefixo 6)
+  - Sócios individuais (prefixo 8)
+  - Números provisórios ou irregulares (prefixo 9)
+  - Organismos (prefixo 6)
+  - Heranças (prefixos 70, 74, 75)
+- **Validação do NIF** com base no algoritmo oficial do [NIF.PT](https://nif.pt).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologias
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- **Next.js**: Framework para construção da aplicação.
+- **Tailwind CSS**: Framework para estilização e design responsivo.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Como Usar
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Clone o repositório:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   `git clone https://github.com/seu-usuario/nif-fresquinho.git`
 
-## Learn More
+2. Instale as dependências:
 
-To learn more about Next.js, take a look at the following resources:
+   `cd nif-fresquinho`
+   
+   `npm install`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Execute a aplicação:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   `npm run dev`
 
-## Deploy on Vercel
+4. Aceda à aplicação no navegador em `http://localhost:3000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Como Funciona
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. O utilizador escolhe o tipo de NIF que deseja gerar (individual, coletivo, não residente, etc.).
+2. O sistema gera um número de NIF válido com base no tipo selecionado.
+3. A validação é feita em tempo real e o resultado é exibido na interface.
+
+## Contribuir
+
+As contribuições são bem-vindas! Se deseja melhorar o projeto, siga os seguintes passos:
+
+1. Faça um fork deste repositório.
+2. Crie uma branch para a sua feature (`git checkout -b minha-feature`).
+3. Commit as suas alterações (`git commit -am 'Adiciona nova funcionalidade'`).
+4. Envie para o repositório remoto (`git push origin minha-feature`).
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT - veja o ficheiro [LICENSE](LICENSE) para mais detalhes.
