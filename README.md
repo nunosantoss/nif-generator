@@ -57,3 +57,7 @@ As contribuições são bem-vindas! Se deseja melhorar o projeto, siga os seguin
 ## Licença
 
 Este projeto está licenciado sob a licença MIT - veja o ficheiro [LICENSE](LICENSE) para mais detalhes.
+
+## Disclaimer
+
+Este gerador de NIFs é uma ferramenta experimental e não deve ser utilizado para fins ilegais ou fraudulentos. O uso para fins não autorizados é de responsabilidade do usuário.
